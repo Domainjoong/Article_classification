@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[26]:
+# In[30]:
 
 
 import pandas as pd
 import pickle
 import requests
+import json
 import os
 import sys
 
@@ -69,4 +70,16 @@ def find_accuracy(alpha):
 
 result = find_accuracy(sys.argv[1])
 print(result)
+
+
+# In[29]:
+
+
+print("{}/article.csv".format(os.path.dirname(os.path.realpath("__file__"))))
+
+
+# In[ ]:
+
+
+
 
